@@ -25,17 +25,13 @@ jobs:
         run: npm install
 
       - name: Build VitePress site
-#        run: npm run docs:build # 构建站点的命令
         run: npm run build # 构建站点的命令
-
-      - name: Check dist directory
-        run: ls docs/.vitepress/dist
 
       - name: Deploy to Aliyun Server
         uses: easingthemes/ssh-deploy@v5.0.3
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SOURCE: "docs/.vitepress/dist/*"
+          SOURCE: ".vitepress/dist/*"
           REMOTE_HOST: "106.15.47.33"
           REMOTE_USER: "root"
           TARGET: "/app/dist"
