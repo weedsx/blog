@@ -25,7 +25,8 @@ jobs:
         run: npm install
 
       - name: Build VitePress site
-        run: npm run docs:build # 构建站点的命令
+#        run: npm run docs:build # 构建站点的命令
+        run: npm run build # 构建站点的命令
 
       - name: Deploy to Aliyun Server
         uses: easingthemes/ssh-deploy@v5.0.3
