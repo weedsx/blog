@@ -1,4 +1,4 @@
-name: Deploy VitePress Site
+name: Deploy Blog Site
 
 on:
   push:
