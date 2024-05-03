@@ -48,7 +48,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           <h2
             class="text-xs tracking-wide uppercase text-gray-500 dark:text-white"
           >
-            Next Article
+            下一篇
           </h2>
           <div class="link">
             <a :href="nextPost.url">{{ nextPost.title }}</a>
@@ -58,14 +58,14 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
           <h2
             class="text-xs tracking-wide uppercase text-gray-500 dark:text-white"
           >
-            Previous Article
+            上一篇
           </h2>
           <div class="link">
             <a :href="prevPost.url">{{ prevPost.title }}</a>
           </div>
         </div>
         <div class="pt-8">
-          <a class="link" href="/">← Back to the blog</a>
+          <a class="link" href="/">← 返回</a>
         </div>
       </footer>
     </div>
