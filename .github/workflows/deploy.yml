@@ -28,6 +28,9 @@ jobs:
 #        run: npm run docs:build # 构建站点的命令
         run: npm run build # 构建站点的命令
 
+      - name: Check dist directory
+        run: ls docs/.vitepress/dist
+
       - name: Deploy to Aliyun Server
         uses: easingthemes/ssh-deploy@v5.0.3
         env:
