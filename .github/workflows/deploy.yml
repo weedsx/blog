@@ -3,7 +3,7 @@ name: Deploy Blog Site
 on:
   push:
     branches:
-      - main # 或者是您用于部署的分支
+      - master # 或者是您用于部署的分支
 
 jobs:
   build-and-deploy:
