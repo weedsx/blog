@@ -44,7 +44,7 @@ const { frontmatter } = useData()
         </article>
       </li>
     </ul>
-    <footer class='text-center p-5 text-sm'>
+    <footer class='text-center p-5 text-sm text-gray-500'>
       Copyright © 2024-present Howard Liu
     </footer>
   </div>
