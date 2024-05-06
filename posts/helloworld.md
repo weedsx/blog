@@ -3,7 +3,7 @@ title: 'Hello World'
 date: 2021-05-01
 author: Howard Liu
 avatar: https://avatars.githubusercontent.com/u/87897205?v=4
-twitter: '@howardlliu'
+github: 'weedsx'
 ---
 
 ```

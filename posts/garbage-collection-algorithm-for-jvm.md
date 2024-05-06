@@ -3,7 +3,7 @@ title: 'JVM 的垃圾回收算法'
 date: 2023-05-09
 author: Howard Liu
 avatar: https://avatars.githubusercontent.com/u/87897205?v=4
-twitter: '@howardlliu'
+github: 'weedsx'
 ---
 
 Java 和 C++ 语言的区别，就在于垃圾收集技术和内存动态分配上，C++ 语言没有垃圾收集技术，需要程序员手动的收集。
