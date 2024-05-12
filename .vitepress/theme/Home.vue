@@ -1,7 +1,7 @@
 <script setup lang='ts'>
-import Date from './Date.vue'
 import { data as posts } from './posts.data.js'
 import { useData } from 'vitepress'
+import date from './Date.vue'
 
 const { frontmatter } = useData()
 </script>
@@ -23,7 +23,7 @@ const { frontmatter } = useData()
         <article
           class='space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline'
         >
-          <Date :date='date' />
+          <date :date='date' />
           <div class='space-y-5 xl:col-span-3'>
             <div class='space-y-6'>
               <h2 class='text-2xl leading-8 font-bold tracking-tight'>
@@ -45,7 +45,7 @@ const { frontmatter } = useData()
       </li>
     </ul>
     <footer class='text-center p-5 text-sm text-gray-500'>
-      Copyright © 2024-present Howard Liu
+      Copyright © 2024-{{new Date().getFullYear()}} Howard Liu
     </footer>
   </div>
 </template>
