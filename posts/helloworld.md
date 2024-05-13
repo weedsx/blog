@@ -43,6 +43,8 @@ public class Main {
 
 ```javascript
 document.write('Hello, World!');
+
+console.log("Hello World!");
 ```
 
 ## Go
