@@ -138,7 +138,7 @@ span.lang {
   font-size: 0.75em;
   color: #999;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-    'Liberation Mono', 'Courier New', monospace;
+  'Liberation Mono', 'Courier New', monospace;
 }
 
 .custom-block {
@@ -153,6 +153,7 @@ span.lang {
   color: #444;
   background-color: #f9f9f9;
 }
+
 .custom-block .custom-block-title {
   margin-bottom: 8px;
   font-size: 15px;
@@ -162,12 +163,13 @@ span.lang {
 .custom-block.tip {
   border: 1px solid #42b883;
 }
+
 .custom-block.tip:before {
   color: #42b883;
 }
 
 .prose
-  :where(:not(pre) > code):not(
+:where(:not(pre) > code):not(
     :where([class~='not-prose'], [class~='not-prose'] *)
   ) {
   color: #0a3760;
@@ -177,14 +179,14 @@ span.lang {
 }
 
 .prose
-  :where(code):not(
+:where(code):not(
     :where([class~='not-prose'], [class~='not-prose'] *)
   )::before {
   content: '' !important;
 }
 
 .prose
-  :where(code):not(
+:where(code):not(
     :where([class~='not-prose'], [class~='not-prose'] *)
   )::after {
   content: '' !important;
@@ -192,7 +194,7 @@ span.lang {
 
 @media (prefers-color-scheme: dark) {
   .prose
-    :where(:not(pre) > code):not(
+  :where(:not(pre) > code):not(
       :where([class~='not-prose'], [class~='not-prose'] *)
     ) {
     color: #d1e9ff;
