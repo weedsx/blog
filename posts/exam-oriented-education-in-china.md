@@ -1,5 +1,5 @@
 ---
-title: 当今中国的应试教育是怎么悄无声息的摧残每一个学生的
+title: '当今中国的应试教育是怎么悄无声息的摧残每一个学生的'
 date: 2024-06-12
 author: Howard Liu
 avatar: https://avatars.githubusercontent.com/u/87897205?v=4
