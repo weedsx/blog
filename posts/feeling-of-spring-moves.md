@@ -11,7 +11,7 @@ github: 'weedsx'
 ---
 
 <p align="center">
-    <img src="/postsimg/春招.png" alt='春招'/>
+    <img src="./img/春招.png" alt='春招'/>
 </p>
 
 
