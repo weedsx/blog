@@ -14,9 +14,9 @@ const { page, frontmatter } = useData()
         <a class="text-xl" href="/" aria-label="H·L 的博客">
           <img
             class="inline-block mr-2"
-            style="width: 36px; height: 31px"
+            style="width: 31px; height: 31px"
             alt="logo"
-            src="/ComfortableGohper.png"
+            src="/ClimbingGopher.jpg"
           />
           <span
             v-if="!frontmatter.index"
