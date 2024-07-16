@@ -24,6 +24,5 @@ export default defineConfig({
       }
     ]
   ],
-  // todo genFeed
-  // buildEnd: genFeed
+  buildEnd: genFeed
 })
