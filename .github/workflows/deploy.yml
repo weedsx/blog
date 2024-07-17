@@ -32,6 +32,6 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SOURCE: ".vitepress/dist/*"
-          REMOTE_HOST: ${{ DEPLOYMENT_IP }}
+          REMOTE_HOST: ${{ secrets.DEPLOYMENT_IP }}
           REMOTE_USER: "root"
           TARGET: "/app/dist"
