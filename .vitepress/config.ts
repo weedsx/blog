@@ -24,5 +24,8 @@ export default defineConfig({
       }
     ]
   ],
-  buildEnd: genFeed
+  buildEnd: genFeed,
+  markdown: {
+    math: true
+  }
 })
