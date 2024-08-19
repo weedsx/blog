@@ -1,12 +1,15 @@
 import { createContentLoader } from 'vitepress'
 
+type DateType = {
+  time: number
+  string: string
+}
+
 interface Post {
   title: string
   url: string
-  date: {
-    time: number
-    string: string
-  }
+  date: DateType
+  update: DateType
   excerpt: string | undefined
 }
 
@@ -21,13 +24,14 @@ export default createContentLoader('posts/*.md', {
         title: frontmatter.title,
         url,
         excerpt,
-        date: formatDate(frontmatter.date)
+        date: formatDate(frontmatter.date),
+        update: formatDate(frontmatter.update != null ? frontmatter.update : frontmatter.date)
       }))
       .sort((a, b) => b.date.time - a.date.time)
   }
 })
 
-function formatDate(raw: string): Post['date'] {
+function formatDate(raw: string): DateType {
   const date = new Date(raw)
   date.setUTCHours(12)
   return {
