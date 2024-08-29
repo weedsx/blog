@@ -13,6 +13,7 @@ function findCurrentIndex() {
   return posts.findIndex((p) => p.url === route.path)
 }
 
+
 // use the customData date which contains pre-resolved date info
 const date = computed(() => posts[findCurrentIndex()].date)
 const update = computed(() => posts[findCurrentIndex()].update)
@@ -43,8 +44,8 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
         
         <!-- New: Last Updated Date -->
         <div class='pt-8 text-right'>
-          <span class='text-gray-500 dark:text-white'>
-            最后更新于<MyDate :date='update' />
+          <span class='text-sm text-gray-500 dark:text-white'>
+            最后更新于: {{ update.string }}
           </span>
         </div>
       </div>
@@ -79,3 +80,10 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
     </div>
   </article>
 </template>
+
+<style scoped>
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+</style>
