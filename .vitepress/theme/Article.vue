@@ -45,7 +45,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
         <!-- New: Last Updated Date -->
         <div class='pt-8 text-right'>
           <span class='text-sm text-gray-500 dark:text-white'>
-            最后更新于: {{ update.string }}
+            最后更新于: {{ update.string.replace('年', '-').replace('月', '-').replace('日', '') }}
           </span>
         </div>
       </div>
