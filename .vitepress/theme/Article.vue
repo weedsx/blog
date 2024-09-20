@@ -43,7 +43,7 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
         <Content class='prose dark:prose-invert max-w-none pt-10 pb-8' />
         
         <!-- New: Last Updated Date -->
-        <div class='pt-8 text-right'>
+        <div class='pt-8 text-right last-updated'>
           <span class='text-sm text-gray-500 dark:text-white'>
             最后更新于: {{ update.string.replace('年', '-').replace('月', '-').replace('日', '') }}
           </span>
@@ -85,5 +85,12 @@ const prevPost = computed(() => posts[findCurrentIndex() + 1])
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+/* 针对移动端，设置“最后更新时间”与上一篇的距离 */
+@media (max-width: 768px) {
+  .last-updated {
+    margin-bottom: 2rem; /* 设置间距，可以根据需求调整 */
+  }
 }
 </style>
